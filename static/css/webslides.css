@@ -1293,6 +1293,10 @@ footer img {
   height: 4rem;
   vertical-align: middle; }
 
+header[role='banner'] {
+  margin-top: 1em;
+}
+
 footer {
   position: relative; }
 
@@ -1325,15 +1329,15 @@ header[role='banner'] {
 .logo {
   text-transform: lowercase; }
   .logo a {
-    background: url("../images/logos/logo.svg") no-repeat 0 0;
-    background-size: 4.8rem;
+    background: url("../images/logos/uxlx.svg") no-repeat 0 0;
+    background-size: 10.8rem;
     float: left;
     height: 4.8rem;
     text-indent: -4000px;
     /*If you remove text-indent and add: */
     /*padding-left: 6rem;*/
     vertical-align: middle;
-    width: 4.8rem; }
+    width: 10.8rem; }
 
 /*=========================================
 4. Navigation
@@ -3084,10 +3088,10 @@ a,
 .bg-white a,
 .bg-light a,
 .bg-gradient-white a {
-  color: #44d; }
+  color: #00B4B4; }
 
 a:hover {
-  color: #3af; }
+  color: #F0654C; }
 
 .flexblock li > a,
 [class*='bg-'] li > a,
@@ -3578,6 +3582,10 @@ Cards
 .description > li:last-child {
   border-bottom: 0; }
 
+/*== App Images === */
+img.app-image {
+  width: 50%;
+}
 /*== Figure Background === */
 [class*='card-'][class*='bg-'] figure {
   background-color: rgba(0, 20, 80, 0.06); }

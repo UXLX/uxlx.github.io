@@ -1714,7 +1714,8 @@ var Hash = function () {
       if (Hash.getSlideNumber() !== number - 1) {
         history.pushState({
           slideI: number - 1
-        }, 'Slide ' + number, HASH + '=' + number);
+        }, '');
+        /* Removed has from url */
       }
     }
   }]);
