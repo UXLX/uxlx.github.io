@@ -420,10 +420,13 @@ footer nav {
   width: 100%;
   z-index: 2; }
   @media (min-width: 1024px) {
-    .wrap,
     header nav,
     footer nav {
-      width: 90%; } }
+      width: 90%; }
+    .wrap {
+        width: 70%;
+        max-width: 1000px;
+      }}
 
 .frame,
 .shadow {
@@ -838,12 +841,12 @@ ul.description {
   ul.description li:hover {
     padding-left: .4rem; }
 
-ul.description li,
-.column ul li {
+ul.description li, {
   list-style: none;
   margin-left: 0; }
 
-.column ol > li {
+.column ol > li,
+.column ul > li {
   margin-left: 1.6rem; }
 
 h1 svg,
@@ -869,36 +872,36 @@ h1 {
 h1 span {
   font-style: italic; }
 
-h2 {
+h2, .h2 {
   font-size: 3.2rem;
   line-height: 4.8rem; }
   @media (min-width: 768px) {
-    h2 {
+    h2, .h2 {
       font-size: 4.8rem;
       line-height: 6.4rem; } }
 
-h3 {
+h3, .h3 {
   font-size: 2.4rem;
   line-height: 4rem; }
   @media (min-width: 768px) {
-    h3 {
+    h3, .h3 {
       font-size: 4rem;
       line-height: 5.6rem; } }
 
-h4 {
+h4, .h4 {
   font-size: 2.2rem;
   line-height: 4rem; }
   @media (min-width: 768px) {
-    h4 {
+    h4, .h4 {
       font-size: 3.2rem;
       line-height: 4.8rem; } }
 
-h5 {
+h5, .h5 {
   font-size: 2rem;
   font-weight: 600;
   line-height: 3.2rem; }
 
-h6 {
+h6, .h6 {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 3.2rem; }
@@ -1448,7 +1451,7 @@ section,
   min-height: 100vh;
   /*Fullscreen*/
   /* Prototyping? min-height: 720px (Baseline: 8px = .8rem)*/
-  padding: 2.4rem;
+  /*padding: 2.4rem;*/
   /*Fixed/Visible header? padding-top: 12rem; */
   page-break-after: always;
   position: relative;
@@ -1457,7 +1460,7 @@ section,
     section,
     .slide {
       padding-bottom: 12rem;
-      padding-top: 12rem; } }
+      /*padding-top: 6rem;*/ } }
 
 /*slide with no padding (full card, .embed youtube video...) */
 .fullscreen {
@@ -3584,7 +3587,13 @@ Cards
 
 /*== App Images === */
 img.app-image {
-  width: 50%;
+  width: 60%;
+}
+
+@media (min-width: 768px) {
+  .grid > .text-column {
+    width: 30%;
+  }
 }
 /*== Figure Background === */
 [class*='card-'][class*='bg-'] figure {

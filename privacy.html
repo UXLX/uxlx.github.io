@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+      -->
+
+    <!-- SEO -->
+    <title>UX + LX: Privacy</title>
+    <meta name="description" content="UX + LX is an app for iPhone and Android that includes bite-sized lessons in practical user experience design for learning experience designers.">
+
+    <!-- URL CANONICAL -->
+    <link rel="canonical" href="http://www.lxresearch.info/">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://www.lxresearch.info"> <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="WebSlides Landings: Create your web presence easily"> <!-- EDIT -->
+    <meta property="og:description" content="Create simple, beautiful landing pages with WebSlides. 120+ free slides ready to use."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T16:54:27"> <!-- EDIT -->
+    <meta property="og:image" content="static/images/share-webslides.jpg" > <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@anthkris"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@anthkris"> <!-- EDIT -->
+    <meta name="twitter:title" content="UX + LX: Bite-Sized UX Lessons for LX Designers"> <!-- EDIT -->
+    <meta name="twitter:description" content="Get practical advice for using the tools of user experience research as you design learning experiences."> <!-- EDIT -->
+    <meta name="twitter:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="index.html" title="UX + LX">UX + LX</a></p>
+        <ul>
+          <li>
+            <a href="about.html" title="About">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="faq.html" title="FAQ">
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a href="privacy.html" title="Privacy">
+              Privacy
+            </a>
+          </li>
+          <li>
+            <a href="terms.html" title="Terms">
+              Terms
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+      <article id="webslides" class="vertical">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section class="">
+          <!--.wrap.longform (width:72rem=720px) = Better reading experience (90-95 characters per line) -->
+          <div class="wrap longform">
+            <h1><strong>Privacy</strong></h1>
+            <p class="text-intro">
+              UX + LX is built to help LX Designers incorporate UX into their work.
+            </p>
+            <p>We built the app to be practical, minimal, micro-learning that you could pick up whenever you had a few minutes. As part of our learning experience design, we also use xAPI to track your participation in the lessons.</p>
+            <hr>
+            <p>Our privacy policy explains:<br>
+              <ul>
+                <li>What information we collect and why we collect it</li>
+                <li>How we use that information</li>
+              </ul>
+            </p>
+            <hr>
+            <h2>About xAPI</h2>
+            <p>This app collects participation information using xAPI. xAPI is an open specification that supports data interoperability. An xAPI statement from the app might look like this:</p>
+<pre>
+  const videoTinCan = new TinCan.Statement({
+  "actor": {
+    name: self.userName, // your user name from your login
+    mbox: self.userEmail,// your email from your login
+  },
+  "verb": {
+     id: "http://activitystrea.ms/schema/1.0/play",
+     display: {'en-US': 'played'} // what activity you engaged in; in this case, playing a video
+  },
+  "object": {
+     id: videoUrl,
+     definition: {
+        name: { "en-US": videoTitle }, // the object you interacted with; in this case, the video you played
+     }
+  },
+  "context": { // other information, such as which lesson the video was located in and who wrote the lesson
+    "contextActivities": {
+      "parent": {
+        "id": "http://www.lxresearch.info/app/ux-lx-app/" + self.lessonNum
+      },
+    },
+    "extensions": {
+      "http://www.lxresearch.info/app/ux-lx-app/extension/author": {
+        "name": self.authorName,
+        "mbox": "mailto:" + self.authorEmail
+      },
+    }
+  },
+});
+</pre>
+          <p>To learn more about xAPI, we recommend:</p>
+            <ul>
+              <li>Reading up on xAPI here: <a href="https://experienceapi.com/overview/" target="_blank">https://experienceapi.com/overview/</a></li>
+              <li>Participating in the xAPI cohort: <a href="http://www.torrancelearning.com/xapi-cohort/" target="_blank">http://www.torrancelearning.com/xapi-cohort/</a></li>
+              <li>Taking a gander at other xAPI resources here: <a href="https://hackid.github.io/search.html?query=xAPI" target="_blank">Hack ID</a></li>
+            </ul>
+            <hr>
+            <h3>What Information We Collect</h3>
+            <p>As a part of implementing xAPI in this app, we colelt your username and email from your social login to use as an identifier.</p>
+            <p>We also track your activity throughout the app, including</p>
+            <ul>
+              <li>Logging in</li>
+              <li>Starting, moving through, and completing a lesson</li>
+              <li>Playing, pausing, and skipping around in audion and video media</li>
+              <li>Clicking on reference links</li>
+            </ul>
+            <h3>How We Use The Information</h3>
+            <p>Your anonymized xAPI data (stripped of your username and email) may be shared with xAPI researchers interested in the kind of information xAPI can reveal and how to visualize that data.</p>
+            <p><strong>Your sensitive information WILL NOT be shared</strong></p>
+          </div>
+        </section>
+
+      </article>
+    </main>
+    <!--main-->
+
+  </body>
+</html>
