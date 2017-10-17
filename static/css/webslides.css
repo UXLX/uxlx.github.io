@@ -417,7 +417,7 @@ footer nav {
   margin-right: auto;
   max-width: 100%;
   position: relative;
-  width: 100%;
+  width: 90%;
   z-index: 2; }
   @media (min-width: 1024px) {
     header nav,
@@ -760,7 +760,7 @@ Auto-fill & Equal height === */
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 2.4rem;
+    padding: 0rem;
     position: relative;
     -webkit-transition: .3s;
     transition: .3s;
@@ -771,7 +771,8 @@ Auto-fill & Equal height === */
             justify-content: center; }
   @media (min-width: 768px) {
     .grid > .column {
-      width: 25%; }
+      width: 25%;
+      padding: 2.4rem;}
     .grid.sm .column:nth-child(1) {
       width: 30%; }
     .grid.sm .column:nth-child(2) {
@@ -782,6 +783,36 @@ Auto-fill & Equal height === */
       width: 30%; }
     .grid.sms .column:nth-child(2) {
       width: 50%; } }
+
+
+  /* Hide at Certain Sizes */
+
+  .hide-md-down {
+    display: none;
+    margin: 0px;
+  }
+
+  @media (min-width: 768px) {
+
+    .hide-md-down {
+      display: flex;
+    }
+    .hide-md-up {
+      display: none;
+      margin: 0px;
+    }
+
+    .hide-lg-down {
+      display: none;
+      margin: 0px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hide-lg-up {
+      display: none;
+    }
+  }
 
 /*============================
 2. TYPOGRAPHY & LISTS
@@ -804,17 +835,31 @@ body,
 textarea {
   font-size: 1.8rem; }
 
-p,
-li,
-dt,
-dd,
-time,
-table,
-big,
-textarea,
-label {
-  line-height: 3.2rem;
-  margin-bottom: 3.2rem; }
+  p,
+  li,
+  dt,
+  dd,
+  time,
+  table,
+  big,
+  textarea,
+  label {
+    line-height: 1.6rem;
+    margin-bottom: 1.6rem; }
+
+@media (min-width: 768px) {
+  p,
+  li,
+  dt,
+  dd,
+  time,
+  table,
+  big,
+  textarea,
+  label {
+    line-height: 3.2rem;
+    margin-bottom: 3.2rem; }
+}
 
 li,
 p:last-child {
@@ -1448,7 +1493,7 @@ section,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100vh;
+  min-height: 90vh;
   /*Fullscreen*/
   /* Prototyping? min-height: 720px (Baseline: 8px = .8rem)*/
   /*padding: 2.4rem;*/
@@ -1456,6 +1501,12 @@ section,
   page-break-after: always;
   position: relative;
   word-wrap: break-word; }
+  @media (min-width: 768px) {
+    section,
+    .slide {
+      min-height: 100vh;
+    }
+  }
   @media (min-width: 1024px) {
     section,
     .slide {
@@ -3586,13 +3637,29 @@ Cards
   border-bottom: 0; }
 
 /*== App Images === */
+
 img.app-image {
-  width: 60%;
+  width: 80%;
+  overflow: hidden;
+}
+
+.get-app {
+  margin-bottom: 1em;
+  margin-top: 0px;
 }
 
 @media (min-width: 768px) {
+  img.app-image {
+    width: 60%;
+  }
   .grid > .text-column {
     width: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  img.app-image {
+    width: 60%;
   }
 }
 /*== Figure Background === */
