@@ -844,7 +844,7 @@ textarea {
   big,
   textarea,
   label {
-    line-height: 1.6rem;
+    line-height: 3rem;
     margin-bottom: 1.6rem; }
 
 @media (min-width: 768px) {
@@ -959,19 +959,19 @@ h3.alignleft + p.alignright {
   margin-bottom: 0;
   margin-top: .4rem; }
 
-h1 + h1 {
+h1 + h1, h1 {
   margin-top: .8rem; }
 
-h1 + h2 {
+h1 + h2, h2 {
   margin-top: .8rem; }
 
-h1 + h3 {
+h1 + h3, h3 {
   margin-top: .8rem; }
 
-h1 + h4 {
+h1 + h4, h4 {
   margin-top: .8rem; }
 
-h1 + h5 {
+h1 + h5, h5 {
   margin-top: .8rem; }
 
 h1 + h6 {

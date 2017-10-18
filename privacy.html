@@ -65,7 +65,7 @@
     <header role="banner">
       <nav role="navigation">
         <p class="logo"><a href="index.html" title="UX + LX">UX + LX</a></p>
-        <ul>
+        <ul class="hide-md-down">
           <li>
             <a href="about.html" title="About">
               About
@@ -86,10 +86,35 @@
               Terms
             </a>
           </li>
-          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
         </ul>
       </nav>
     </header>
+    <div class="wrap" style="margin-top: 1em; margin-bottom: 1em;">
+      <nav>
+        <ul class="hide-md-up">
+          <li>
+            <a href="about.html" title="About">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="faq.html" title="FAQ">
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a href="privacy.html" title="Privacy">
+              Privacy
+            </a>
+          </li>
+          <li>
+            <a href="terms.html" title="Terms">
+              Terms
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <main role="main">
       <article id="webslides" class="vertical">
 
@@ -98,10 +123,8 @@
           - Vertical sliding = <article id="webslides" class="vertical">
           - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
         -->
-
-        <section class="">
           <!--.wrap.longform (width:72rem=720px) = Better reading experience (90-95 characters per line) -->
-          <div class="wrap longform">
+          <div class="wrap">
             <h1><strong>Privacy</strong></h1>
             <p class="text-intro">
               UX + LX is built to help LX Designers incorporate UX into their work.
@@ -116,8 +139,8 @@
             </p>
             <hr>
             <h2>About xAPI</h2>
-            <p>This app collects participation information using xAPI. xAPI is an open specification that supports data interoperability. An xAPI statement from the app might look like this:</p>
-<pre>
+            <p>This app collects participation information using xAPI. xAPI is an open specification that supports data interoperability. <span class="hide-md-down">An xAPI statement from the app might look like this:</span></p>
+<pre class="hide-md-down">
   const videoTinCan = new TinCan.Statement({
   "actor": {
     name: self.userName, // your user name from your login
@@ -166,9 +189,8 @@
             </ul>
             <h3>How We Use The Information</h3>
             <p>Your anonymized xAPI data (stripped of your username and email) may be shared with xAPI researchers interested in the kind of information xAPI can reveal and how to visualize that data.</p>
-            <p><strong>Your sensitive information WILL NOT be shared</strong></p>
+            <p><strong>Your sensitive information WILL NOT be shared.</strong></p>
           </div>
-        </section>
 
       </article>
     </main>
