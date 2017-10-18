@@ -65,7 +65,7 @@
     <header role="banner">
       <nav role="navigation">
         <p class="logo"><a href="index.html" title="UX + LX">UX + LX</a></p>
-        <ul>
+        <ul class="hide-md-down">
           <li>
             <a href="about.html" title="About">
               About
@@ -82,16 +82,41 @@
             </a>
           </li>
           <li>
-            <a href="/terms.html" title="Terms">
+            <a href="terms.html" title="Terms">
               Terms
             </a>
           </li>
-          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
         </ul>
       </nav>
     </header>
+    <div class="wrap" style="margin-top: 1em; margin-bottom: 1em;">
+      <nav>
+        <ul class="hide-md-up">
+          <li>
+            <a href="about.html" title="About">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="faq.html" title="FAQ">
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a href="privacy.html" title="Privacy">
+              Privacy
+            </a>
+          </li>
+          <li>
+            <a href="terms.html" title="Terms">
+              Terms
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <main role="main">
-      <article id="webslides" class="vertical">
+      <article>
 
         <!-- Quick Guide
           - Each parent <section> in the <article id="webslides"> element is an individual slide.
@@ -99,8 +124,7 @@
           - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
         -->
 
-        <section>
-          <div class="wrap longform">
+          <div class="wrap">
             <h1><strong>What is UX + LX?</strong></h1>
             <p class="text-intro">
               User Experience design and research has a lot to teach learning experienced designers.
@@ -109,25 +133,15 @@
             <p>UX research can offer powerful methods for gleaning insights about your learners, no matter what step your at in the learning experience design process or which process your implementing.</p>
             <p>We've assembled practical lessons and hands-on resources contributed by LX practitioners to get your started implementing real UX solutions to problems in your practice.</p>
             <p>
-              <a href="#" class="badge-ios" title="iOS App">iOS app</a>
+              <a href="https://itunes.apple.com/us/app/ux-lx/id1288848166?ls=1&mt=8" class="badge-ios" title="iOS App">iOS app</a>
               <a href="https://play.google.com/store/apps/details?id=io.ionic.uxlx" class="badge-android" title="Android app">Android app</a>
             </p>
           </div>
           <!-- .end .wrap -->
-        </section>
 
       </article>
     </main>
     <!--main-->
-    <!-- Required -->
-    <script src="static/js/webslides.js"></script>
-
-    <script>
-      window.ws = new WebSlides({
-        loop: false,
-        showIndex: false
-      });
-    </script>
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
     <script defer src="static/js/svg-icons.js"></script>
